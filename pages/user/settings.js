@@ -12,7 +12,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function Breachese2({ children, home }) {
   const { data: emailData, error: emailError } = useSWR(
-    "/api/v2/email/addresses",
+    "/api/v2/user/email/addresses",
     fetcher
   );
   const { data: profileData, error: profileError } = useSWR(

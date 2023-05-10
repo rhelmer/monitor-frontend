@@ -11,7 +11,7 @@ export const siteTitle = "Firefox Monitor";
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function Breachese2({ children, home }) {
-  const { data, error } = useSWR("/api/v2/email/addresses", fetcher);
+  const { data, error } = useSWR("/api/v2/user/email/addresses", fetcher);
 
   if (error || (data && data.error)) return <div>Failed to load</div>;
   if (!data) return;
