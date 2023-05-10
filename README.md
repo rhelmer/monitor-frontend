@@ -34,21 +34,21 @@ npm run dev
 
 Open Questions:
 
-    - Should we continue to use KNEX for db models?
-        - We could reuse existing Express code in next.js
-    - Do we want to use SSR or SSG?
-        - Auth options are different https://nextjs.org/docs/pages/building-your-application/routing/authenticating
-        - How does Relay do it? How would it work if they were to start over?
+- Should we continue to use KNEX for db models?
+    - We could reuse existing Express code in next.js
+- Do we want to use SSR or SSG?
+    - Auth options are different https://nextjs.org/docs/pages/building-your-application/routing/authenticating
+    - How does Relay do it? How would it work if they were to start over?
 
 Next steps:
 
-    - Backend
-        - Shrink down Express app to just data ingestion + email
-            - Maybe we could just run this in k8s alongside our current express JS app now to help availability
-        - Port current Monitor code:
-            - Db models / migration
-            - Anything relevant from controllers
-    - Frontend
-        - Convert current Figma mocks to React components
-        - Implement fxa+subplat
-            - Port from Relay if possible
+- Backend
+    - Shrink down Express app to just data ingestion + email
+        - Maybe we could just run this in k8s alongside our current express JS app now to help availability
+    - Port current Monitor code:
+        - Db models / migration
+        - Anything relevant from controllers
+- Frontend
+    - Convert current Figma mocks to React components
+    - Implement fxa+subplat
+        - Port from Relay if possible
